@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Enhanced agriculture-themed color palette */
+    --background: 125 15% 96%;
+    --foreground: 125 8% 8%;
+    --card: 125 15% 98%;
+    --card-foreground: 125 8% 12%;
+    --popover: 125 15% 98%;
+    --popover-foreground: 125 8% 8%;
+    --primary: 142 73% 20%;
+    --primary-foreground: 125 15% 98%;
+    --primary-glow: 142 60% 35%;
+    --secondary: 125 15% 90%;
+    --secondary-foreground: 125 8% 20%;
+    --muted: 125 10% 95%;
+    --muted-foreground: 125 6% 45%;
+    --accent: 85 60% 55%;
+    --accent-foreground: 125 15% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 125 15% 88%;
+    --input: 125 15% 88%;
+    --ring: 142 73% 20%;
+    --radius: 0.5rem;
+    --chart-1: 142 73% 20%;
+    --chart-2: 85 60% 55%;
+    --chart-3: 48 84% 55%;
+    --chart-4: 32 89% 68%;
+    --chart-5: 14 100% 57%;
+
+    /* Agriculture gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-success: linear-gradient(135deg, hsl(142 73% 20%), hsl(142 60% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 50%, hsl(var(--accent)) 100%);
+
+    /* Enhanced shadows with agriculture theme */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--primary) / 0.05);
+    --shadow: 0 1px 3px 0 hsl(var(--primary) / 0.1), 0 1px 2px -1px hsl(var(--primary) / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -2px hsl(var(--primary) / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -4px hsl(var(--primary) / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(var(--primary) / 0.1), 0 8px 10px -6px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.3);
+    --shadow-glow-lg: 0 0 40px hsl(var(--primary-glow) / 0.4);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dark {
+    --background: 125 15% 3%;
+    --foreground: 125 15% 98%;
+    --card: 125 15% 4%;
+    --card-foreground: 125 15% 95%;
+    --popover: 125 15% 4%;
+    --popover-foreground: 125 15% 98%;
+    --primary: 142 60% 40%;
+    --primary-foreground: 125 15% 8%;
+    --primary-glow: 142 50% 55%;
+    --secondary: 125 15% 8%;
+    --secondary-foreground: 125 15% 90%;
+    --muted: 125 10% 8%;
+    --muted-foreground: 125 6% 65%;
+    --accent: 85 50% 60%;
+    --accent-foreground: 125 15% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 125 15% 12%;
+    --input: 125 15% 12%;
+    --ring: 142 60% 40%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-success: linear-gradient(135deg, hsl(142 60% 40%), hsl(142 50% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 50%, hsl(var(--accent)) 100%);
+
+    /* Dark mode shadows */
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.2);
+    --shadow-glow-lg: 0 0 40px hsl(var(--primary-glow) / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/30;
+  }
+}
+
+@layer components {
+  /* Agriculture-themed gradients */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-success {
+    background: var(--gradient-success);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  /* Enhanced shadows */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-lg {
+    box-shadow: var(--shadow-glow-lg);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+
+  /* Glass effect */
+  .glass {
+    backdrop-filter: blur(10px);
+    background: hsl(var(--background) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  /* Agriculture patterns */
+  .pattern-leaves {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm-20-18c9.941 0 18 8.059 18 18s-8.059 18-18 18S-8 38.941-8 30s8.059-18 18-18z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Focus styles */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  /* Voice recording animations */
+  .pulse-ring {
+    animation: pulse-ring 1.5s infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  /* Audio visualizer */
+  .audio-bar {
+    @apply bg-primary;
+    animation: audio-wave 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes audio-wave {
+    from {
+      height: 20%;
+    }
+    to {
+      height: 100%;
+    }
+  }
+
+  /* Loading animations */
+  .loading-dots {
+    display: inline-flex;
+    gap: 2px;
+  }
+
+  .loading-dots > div {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: loading-dots 1.4s infinite ease-in-out;
+  }
+
+  .loading-dots > div:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+
+  .loading-dots > div:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+
+  @keyframes loading-dots {
+    0%, 80%, 100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+
+  /* Disease detection result animations */
+  .result-appear {
+    animation: result-appear 0.5s ease-out;
+  }
+
+  @keyframes result-appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* Confidence meter */
+  .confidence-meter {
+    @apply relative overflow-hidden rounded-full;
+  }
+
+  .confidence-meter::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500;
+    opacity: 0.2;
+  }
+
+  /* Chat message animations */
+  .message-slide-in {
+    animation: message-slide-in 0.3s ease-out;
+  }
+
+  @keyframes message-slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-transform duration-200 ease-out hover:scale-105 hover:shadow-lg;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-out hover:shadow-glow;
+  }
+
+  /* Agriculture icons */
+  .icon-leaf {
+    color: hsl(var(--primary));
+    filter: drop-shadow(0 2px 4px hsl(var(--primary) / 0.2));
+  }
+
+  .icon-plant {
+    color: hsl(var(--accent));
+    filter: drop-shadow(0 2px 4px hsl(var(--accent) / 0.2));
+  }
+
+  /* Responsive text */
+  .text-responsive {
+    @apply text-sm md:text-base lg:text-lg;
+  }
+
+  .heading-responsive {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:shadow-md hover:-translate-y-1;
+  }
+
+  /* Success states */
+  .success-glow {
+    @apply shadow-[0_0_20px_hsl(var(--chart-1)/0.3)] border-[hsl(var(--chart-1)/0.5)];
+  }
+
+  .warning-glow {
+    @apply shadow-[0_0_20px_hsl(var(--chart-3)/0.3)] border-[hsl(var(--chart-3)/0.5)];
+  }
+
+  .error-glow {
+    @apply shadow-[0_0_20px_hsl(var(--destructive)/0.3)] border-[hsl(var(--destructive)/0.5)];
+  }
+}
+
+@layer utilities {
+  /* Agriculture-themed spacing */
+  .space-agricultural {
+    @apply space-y-6 md:space-y-8 lg:space-y-10;
+  }
+
+  /* Container with agriculture max-width */
+  .container-agricultural {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive grid for features */
+  .grid-agricultural {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8;
+  }
+
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Full height minus header */
+  .min-h-main {
+    min-height: calc(100vh - 4rem);
+  }
+
+  /* Aspect ratio utilities */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+}

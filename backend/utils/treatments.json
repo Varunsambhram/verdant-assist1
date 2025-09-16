@@ -1,0 +1,57 @@
+{
+  "Apple___Apple_scab": "Apply fungicides containing captan or myclobutanil. Remove fallen leaves and prune for better air circulation. Avoid overhead watering.",
+  "Apple___Black_rot": "Use copper-based fungicides early in season. Remove infected fruits immediately. Ensure proper sanitation and avoid wetting foliage.",
+  "Apple___Cedar_apple_rust": "Apply preventive fungicides in spring before symptoms appear. Remove nearby cedar trees if possible. Use resistant apple varieties.",
+  "Apple___healthy": "Your apple plant looks healthy! Continue with regular care: proper watering, balanced fertilization, and regular pruning.",
+  
+  "Blueberry___healthy": "Your blueberry plant looks healthy! Maintain consistent watering, acidic soil (pH 4.5-5.5), and regular mulching.",
+  
+  "Cherry_(including_sour)___Powdery_mildew": "Apply sulfur-based fungicides or baking soda spray. Improve air circulation around plants. Water at soil level, not on leaves. Prune for better airflow.",
+  "Cherry_(including_sour)___healthy": "Your cherry plant looks healthy! Continue proper pruning, adequate watering, and protection from birds.",
+  
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "Use fungicides containing azoxystrobin or propiconazole. Practice crop rotation with non-host crops. Manage crop residue properly.",
+  "Corn_(maize)___Common_rust": "Apply fungicides with propiconazole or tebuconazole. Choose resistant varieties for future planting. Ensure good field sanitation.",
+  "Corn_(maize)___Northern_Leaf_Blight": "Use fungicides and practice 2-3 year crop rotation. Remove infected plant debris. Plant resistant varieties when available.",
+  "Corn_(maize)___healthy": "Your corn plant looks healthy! Maintain proper spacing, adequate nutrition, and consistent soil moisture.",
+  
+  "Grape___Black_rot": "Apply fungicides with mancozeb or copper sulfate. Remove infected berries immediately. Improve air circulation through proper pruning.",
+  "Grape___Esca_(Black_Measles)": "No effective chemical treatment available. Prune infected wood during dormant season. Improve vineyard management and reduce plant stress.",
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "Apply copper-based fungicides. Improve air circulation and reduce humidity around vines. Remove infected leaves.",
+  "Grape___healthy": "Your grape plant looks healthy! Continue with proper pruning, disease prevention, and balanced nutrition.",
+  
+  "Orange___Haunglongbing_(Citrus_greening)": "No cure available - this is a serious disease. Remove infected trees immediately to prevent spread. Control Asian citrus psyllid with approved insecticides. Consult agricultural extension immediately.",
+  
+  "Peach___Bacterial_spot": "Apply copper bactericides during dormant season and early spring. Use resistant varieties. Avoid overhead irrigation and work when plants are dry.",
+  "Peach___healthy": "Your peach tree looks healthy! Continue regular pruning, thinning fruits, and monitoring for pests.",
+  
+  "Pepper,_bell___Bacterial_spot": "Use copper bactericides and practice crop rotation. Avoid overhead watering. Use pathogen-free seeds and transplants.",
+  "Pepper,_bell___healthy": "Your pepper plant looks healthy! Maintain consistent watering, good nutrition, and support for heavy fruit loads.",
+  
+  "Potato___Early_blight": "Apply fungicides with chlorothalonil or mancozeb at first sign of disease. Remove infected leaves. Improve air circulation and avoid overhead watering.",
+  "Potato___Late_blight": "Apply fungicides with metalaxyl or mancozeb immediately - this spreads rapidly. Avoid overhead irrigation. Ensure good drainage and destroy infected plants.",
+  "Potato___healthy": "Your potato plant looks healthy! Continue with proper hilling, consistent moisture, and monitoring for pests.",
+  
+  "Raspberry___healthy": "Your raspberry plant looks healthy! Maintain proper pruning, support systems, and good air circulation.",
+  
+  "Soybean___healthy": "Your soybean plant looks healthy! Continue monitoring for pests and diseases, and maintain proper nutrition.",
+  
+  "Squash___Powdery_mildew": "Apply sulfur or potassium bicarbonate sprays (1 tablespoon per gallon water). Improve air circulation and avoid overhead watering. Remove infected leaves.",
+  
+  "Strawberry___Leaf_scorch": "Remove affected leaves immediately. Improve air circulation around plants. Apply appropriate fungicides if disease persists. Avoid overhead watering.",
+  "Strawberry___healthy": "Your strawberry plant looks healthy! Maintain proper spacing, good drainage, and remove old leaves regularly.",
+  
+  "Tomato___Bacterial_spot": "Use copper bactericides and practice 3-year crop rotation. Avoid working with wet plants. Use pathogen-free seeds and avoid overhead irrigation.",
+  "Tomato___Early_blight": "Apply fungicides with chlorothalonil or copper. Remove lower leaves touching soil. Improve air circulation and mulch around plants.",
+  "Tomato___Late_blight": "Apply fungicides with metalaxyl immediately - this is serious! Remove infected plants completely. Avoid overhead watering and ensure good air circulation.",
+  "Tomato___Leaf_Mold": "Improve greenhouse ventilation significantly. Apply fungicides containing chlorothalonil. Reduce humidity levels below 85%.",
+  "Tomato___Septoria_leaf_spot": "Use fungicides with chlorothalonil or copper. Remove infected leaves from bottom up. Mulch around plants and avoid overhead watering.",
+  "Tomato___Spider_mites Two-spotted_spider_mite": "Increase humidity around plants. Use insecticidal soap or neem oil. Release beneficial predatory mites. Spray undersides of leaves.",
+  "Tomato___Target_Spot": "Apply fungicides with azoxystrobin or chlorothalonil. Improve air circulation and avoid overhead irrigation. Remove infected debris.",
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "No direct treatment available. Control whitefly vectors with insecticides or yellow sticky traps. Remove infected plants to prevent spread.",
+  "Tomato___Tomato_mosaic_virus": "No cure available. Remove infected plants immediately. Control aphid vectors. Use virus-free seeds and resistant varieties.",
+  "Tomato___healthy": "Your tomato plant looks healthy! Continue with proper support, regular watering, and balanced nutrition.",
+  
+  "general_low_confidence": "I'm not fully confident about this disease identification. For best results, please:\n1. Take a clearer, well-lit photo of the affected area\n2. Ensure the diseased part is clearly visible\n3. Consult with a local agricultural expert or extension service\n4. Consider getting a professional plant disease diagnosis",
+  
+  "general_prevention": "General disease prevention tips:\n• Ensure good air circulation around plants\n• Water at soil level, avoid wetting leaves\n• Remove infected plant material immediately\n• Practice crop rotation\n• Use clean tools and hands\n• Maintain proper plant spacing\n• Apply mulch to prevent soil splashing"
+}
