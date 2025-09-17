@@ -1,6 +1,9 @@
 flask
+flask-cors
 gunicorn
 tensorflow
+scikit-learn
 numpy
-pillow
-flask-cors
+pandas
+librosa
+pyttsx3
