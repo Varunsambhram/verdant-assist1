@@ -3,7 +3,11 @@ flask-cors
 gunicorn
 tensorflow
 scikit-learn
+matplotlib
 numpy
 pandas
 librosa
 pyttsx3
+requests
+openai-whisper
+translate
