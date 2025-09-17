@@ -8,8 +8,8 @@ from flask_cors import CORS
 import os
 import tempfile
 import base64
-from disease_model import DiseaseDetector
-from voice_assistant import VoiceAssistant
+from backend.disease_model import DiseaseDetector
+from backend.voice_assistant import VoiceAssistant
 import traceback
 
 app = Flask(__name__)
