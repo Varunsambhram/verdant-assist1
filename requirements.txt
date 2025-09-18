@@ -3,9 +3,10 @@ flask-cors
 gunicorn
 tensorflow
 scikit-learn
-matplotlib
 numpy
 pandas
+matplotlib
+seaborn
 librosa
 pyttsx3
 requests
